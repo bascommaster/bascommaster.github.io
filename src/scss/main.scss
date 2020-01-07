@@ -1,5 +1,10 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
+
+@import "modules/_main-container";
+@import "modules/_header";
+@import "modules/_my-skills";
 
 
 html {
@@ -13,4 +18,6 @@ html {
 body {
   color: $violet;
   background: $white;
+  font-family: 'Poppins', sans-serif;
+  border: 16px solid $headers;
 }

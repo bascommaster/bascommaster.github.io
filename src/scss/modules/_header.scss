@@ -1,0 +1,34 @@
+.header{
+    width: 890px;
+    min-height: 292px;
+    padding-bottom: 160px;
+
+    &__hello{
+        font-size: 40px;
+        color: $headers;
+        line-height: 56px;
+        font-weight: 600;
+    }
+
+    &__info{
+        width: 681px;
+        font-size: 20px;
+        font-weight: 300;
+        color: $text-grey;
+        line-height: 36px;
+        padding-bottom: 50px;
+    }
+
+    &__link{
+        color: $link-blue;
+        font-weight: 500;
+    }
+
+    &__mail{
+        font-size: 20px;
+        line-height: 32px;
+        text-decoration: none;
+    }
+
+
+}

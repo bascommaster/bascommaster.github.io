@@ -1,22 +1,22 @@
 .header{
-    width: 890px;
+    max-width: 891px;
     min-height: 292px;
-    padding-bottom: 160px;
+    margin-bottom: 2.5rem;
 
     &__hello{
-        font-size: 40px;
+        font-size: 2.5rem;
         color: $headers;
-        line-height: 56px;
+        line-height: 3.5rem;
         font-weight: 600;
     }
 
     &__info{
-        width: 681px;
-        font-size: 20px;
+        max-width: 681px;
+        font-size: 1.25rem;
         font-weight: 300;
         color: $text-grey;
-        line-height: 36px;
-        padding-bottom: 50px;
+        line-height: 2.25rem;
+        margin-bottom: 3.75rem;
     }
 
     &__link{
@@ -25,9 +25,11 @@
     }
 
     &__mail{
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 1.25rem;
+        line-height: 2rem;
         text-decoration: none;
+        padding-bottom: 10px;
+        border-bottom: 3px solid $link-blue;
     }
 
 

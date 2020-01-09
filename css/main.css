@@ -309,22 +309,27 @@ template {
   display: none; }
 
 .main-container {
-  max-width: 1184px;
-  padding: 112px 0 100px;
+  max-width: 1200px;
+  padding: 112px 16px 100px;
   margin: 0 auto; }
+  @media (max-width: 768px) {
+    .main-container {
+      padding: 64px 16px 30px; } }
   .main-container__photo {
     width: 120px;
     height: 120px; }
 
 .header {
   max-width: 891px;
-  min-height: 292px;
-  margin-bottom: 2.5rem; }
+  margin-bottom: 0;
+  margin-top: 0; }
   .header__hello {
     font-size: 2.5rem;
     color: #171F3F;
     line-height: 3.5rem;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 8px; }
   .header__info {
     max-width: 681px;
     font-size: 1.25rem;
@@ -332,6 +337,9 @@ template {
     color: #52606D;
     line-height: 2.25rem;
     margin-bottom: 3.75rem; }
+    @media (max-width: 768px) {
+      .header__info {
+        margin-bottom: 40px; } }
   .header__link {
     color: #0593FB;
     font-weight: 500; }
@@ -341,6 +349,9 @@ template {
     text-decoration: none;
     padding-bottom: 10px;
     border-bottom: 3px solid #0593FB; }
+    @media (max-width: 768px) {
+      .header__mail {
+        margin-bottom: 120px; } }
 
 .skills {
   padding-bottom: 4rem; }
@@ -358,10 +369,17 @@ template {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
   font-size: 1.23rem;
   color: #52606D;
   line-height: 2.5rem;
   padding-bottom: 3rem; }
+  @media (max-width: 768px) {
+    .skills-list {
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr; } }
   .skills-list__title {
     font-size: 2rem;
     color: #171F3F;
@@ -370,7 +388,7 @@ template {
     margin-top: 0; }
     .skills-list__title::before {
       content: '';
-      width: 80px;
+      width: 5rem;
       height: 4px;
       background-color: #06C847;
       border-radius: 10px;
@@ -391,6 +409,9 @@ template {
   -webkit-column-gap: 2rem;
      -moz-column-gap: 2rem;
           column-gap: 2rem; }
+  @media (max-width: 768px) {
+    .skills-box {
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); } }
   .skills-box__items {
     list-style-type: none;
     padding-left: 30px;
@@ -413,24 +434,35 @@ template {
         background-repeat: no-repeat; }
 
 .bottom-container {
-  width: 100%;
   background-color: #F5F7FA; }
+  @media (max-width: 768px) {
+    .bottom-container {
+      padding: 0 16px; } }
 
 .projects {
   font-size: 1.25rem;
   color: #52606D;
   line-height: 2.25rem;
   font-weight: 300;
-  max-width: 1184px;
-  padding: 112px 0 100px;
+  max-width: 1200px;
+  padding: 112px 16px 100px;
   margin: 0 auto; }
+  @media (max-width: 768px) {
+    .projects {
+      padding: 80px 0 80px; } }
   .projects__title {
     font-size: 2.25rem;
     line-height: 3rem;
     color: #171F3F; }
+    @media (max-width: 768px) {
+      .projects__title {
+        margin-bottom: 8px; } }
   .projects__description {
-    width: 580px;
+    max-width: 580px;
     margin-bottom: 4rem; }
+    @media (max-width: 768px) {
+      .projects__description {
+        margin-bottom: 32px; } }
 
 .projects-container {
   display: -ms-grid;
@@ -441,14 +473,17 @@ template {
      -moz-column-gap: 1.5rem;
           column-gap: 1.5rem;
   row-gap: 1.5rem; }
+  @media (max-width: 768px) {
+    .projects-container {
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); } }
 
 .project {
   background-color: #FFFFFF;
   font-size: 1.125rem;
   line-height: 2rem;
   border-radius: 8px;
-  -webkit-box-shadow: 0 0 1rem #CBD2D9;
-          box-shadow: 0 0 1rem #CBD2D9; }
+  -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+          box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09); }
   .project__list {
     padding: 3rem 3rem 0;
     margin: 0; }
@@ -493,13 +528,19 @@ template {
         width: 2px;
         display: block;
         background-color: #CBD2D9; }
+        @media (max-width: 768px) {
+          .project-footer__link .fa-desktop::after {
+            left: 83px; } }
 
 .footer-container {
   background-color: #171F3F;
   color: #FFFFFF; }
+  @media (max-width: 768px) {
+    .footer-container {
+      padding: 0 16px; } }
 
 .footer {
-  max-width: 1184px;
+  max-width: 1200px;
   padding: 112px 0 100px;
   margin: 0 auto; }
   .footer__title {
@@ -508,18 +549,27 @@ template {
     line-height: 2.75rem;
     margin-bottom: 1rem;
     margin-top: 0; }
+    @media (max-width: 768px) {
+      .footer__title {
+        margin-bottom: 8px; } }
     .footer__title::before {
       content: "";
-      width: 80px;
+      width: 5rem;
       height: 4px;
       background-color: #0593FB;
       display: block;
       margin-bottom: 1.5rem; }
+      @media (max-width: 768px) {
+        .footer__title::before {
+          margin-bottom: 8px; } }
   .footer__info {
     font-size: 1.25rem;
     line-height: 2.125rem;
     font-weight: 300;
-    width: 580px; }
+    max-width: 580px; }
+    @media (max-width: 768px) {
+      .footer__info {
+        margin-bottom: 24px; } }
   .footer__email {
     color: #0593FB;
     font-size: 1.25rem;
@@ -528,7 +578,7 @@ template {
     text-decoration: none; }
     .footer__email::after {
       content: '';
-      width: 322px;
+      width: 20.125rem;
       height: 2px;
       background-color: #0593FB;
       display: block;
@@ -542,21 +592,29 @@ template {
     width: 2rem;
     height: 2rem;
     color: #FFFFFF;
-    margin-right: 1.5rem; }
+    margin-right: 24px; }
 
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth; }
+  @media (max-width: 768px) {
+    html {
+      font-size: 12px; } }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
 
 body {
   color: #653CAD;
   background: #FFFFFF;
   font-family: 'Poppins', sans-serif;
   border: 16px solid #171F3F; }
+  @media (max-width: 768px) {
+    body {
+      border: none; } }
 
 /*# sourceMappingURL=main.css.map */

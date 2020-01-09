@@ -1,0 +1,116 @@
+.bottom-container{
+    width:100%;
+    background-color: $box-footer;
+
+}
+
+
+
+.projects{
+    
+    font-size: 1.25rem;
+    color:$text-grey;
+    line-height: 2.25rem;
+    font-weight: 300;
+    max-width: 1184px;
+    padding: 112px 0 200px;
+    margin: 0 auto;
+    
+    
+    &__title{
+        font-size: 2.25rem; 
+        line-height: 3rem;
+        color:$headers;
+    }
+    
+    &__description{
+        width:580px;
+        margin-bottom: 4rem;
+
+    }
+}
+
+                    
+.projects-container{                        
+    display:grid;                       
+    grid-template-columns: 1fr 1fr;                      
+    column-gap: 1.5rem;   
+    row-gap: 1.5rem;               
+}
+
+.project{
+    background-color: $white;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 1rem $line;
+
+    &__list{
+        padding: 3rem 3rem 0;
+        margin:0;
+    }
+}
+
+.project-items{
+
+    list-style-type: none;
+
+    &__logo{
+        width:3rem;
+        height: 3rem;
+    }
+
+    &__title{
+        font-size: 1.25rem;
+        color:$headers;
+        line-height:2.25rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        margin-bottom: 1.125rem;
+    }
+
+    &__description{
+
+        margin-bottom: 3rem;
+    }
+}
+
+.project-footer{
+
+    height: 4rem;
+    background-color: $box-footer;
+    // background-color: #bbb;
+    border-radius: 0 0 8px 8px;
+    line-height: 4rem;
+    // padding-right: 3rem;
+    text-align: right;
+
+
+    &__link{
+        position: relative;
+        color: $link-blue;
+        font-weight: 500;
+        text-decoration: none;
+        padding-right: 3rem;
+
+        & .fa{
+            padding-right: 8px;
+        }
+        & .fa-desktop{
+            padding-right: 8px;  
+
+            &::after{
+                position: absolute;
+                top:0;
+                left: 105px;
+                content: "";
+                height: 32px;
+                width: 2px;
+                display: block;
+                background-color: $line;
+            }
+        }
+    }
+
+}
+

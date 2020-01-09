@@ -310,7 +310,7 @@ template {
 
 .main-container {
   max-width: 1184px;
-  padding: 112px 0 200px;
+  padding: 112px 0 100px;
   margin: 0 auto; }
   .main-container__photo {
     width: 120px;
@@ -351,7 +351,7 @@ template {
     padding-bottom: 1rem;
     padding-top: 5rem;
     margin-bottom: 5rem;
-    border-bottom: 4px solid #E5E8EC; }
+    border-bottom: 4px solid #CBD2D9; }
 
 .skills-list {
   display: -ms-grid;
@@ -411,6 +411,88 @@ template {
       .skills-list--blue .skills-box__items::before {
         background: url("../assets/img/Vector-blue.svg");
         background-repeat: no-repeat; }
+
+.bottom-container {
+  width: 100%;
+  background-color: #F5F7FA; }
+
+.projects {
+  font-size: 1.25rem;
+  color: #52606D;
+  line-height: 2.25rem;
+  font-weight: 300;
+  max-width: 1184px;
+  padding: 112px 0 200px;
+  margin: 0 auto; }
+  .projects__title {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    color: #171F3F; }
+  .projects__description {
+    width: 580px;
+    margin-bottom: 4rem; }
+
+.projects-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  row-gap: 1.5rem; }
+
+.project {
+  background-color: #FFFFFF;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 1rem #CBD2D9;
+          box-shadow: 0 0 1rem #CBD2D9; }
+  .project__list {
+    padding: 3rem 3rem 0;
+    margin: 0; }
+
+.project-items {
+  list-style-type: none; }
+  .project-items__logo {
+    width: 3rem;
+    height: 3rem; }
+  .project-items__title {
+    font-size: 1.25rem;
+    color: #171F3F;
+    line-height: 2.25rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1.125rem; }
+  .project-items__description {
+    margin-bottom: 3rem; }
+
+.project-footer {
+  height: 4rem;
+  background-color: #F5F7FA;
+  border-radius: 0 0 8px 8px;
+  line-height: 4rem;
+  text-align: right; }
+  .project-footer__link {
+    position: relative;
+    color: #0593FB;
+    font-weight: 500;
+    text-decoration: none;
+    padding-right: 3rem; }
+    .project-footer__link .fa {
+      padding-right: 8px; }
+    .project-footer__link .fa-desktop {
+      padding-right: 8px; }
+      .project-footer__link .fa-desktop::after {
+        position: absolute;
+        top: 0;
+        left: 105px;
+        content: "";
+        height: 32px;
+        width: 2px;
+        display: block;
+        background-color: #CBD2D9; }
 
 html {
   -webkit-box-sizing: border-box;

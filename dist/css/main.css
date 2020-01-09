@@ -422,7 +422,7 @@ template {
   line-height: 2.25rem;
   font-weight: 300;
   max-width: 1184px;
-  padding: 112px 0 200px;
+  padding: 112px 0 100px;
   margin: 0 auto; }
   .projects__title {
     font-size: 2.25rem;
@@ -493,6 +493,56 @@ template {
         width: 2px;
         display: block;
         background-color: #CBD2D9; }
+
+.footer-container {
+  background-color: #171F3F;
+  color: #FFFFFF; }
+
+.footer {
+  max-width: 1184px;
+  padding: 112px 0 100px;
+  margin: 0 auto; }
+  .footer__title {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.75rem;
+    margin-bottom: 1rem;
+    margin-top: 0; }
+    .footer__title::before {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background-color: #0593FB;
+      display: block;
+      margin-bottom: 1.5rem; }
+  .footer__info {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    font-weight: 300;
+    width: 580px; }
+  .footer__email {
+    color: #0593FB;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 500;
+    text-decoration: none; }
+    .footer__email::after {
+      content: '';
+      width: 322px;
+      height: 2px;
+      background-color: #0593FB;
+      display: block;
+      margin-top: 0.5rem; }
+
+.icons {
+  font-size: 2rem;
+  margin-bottom: 3rem; }
+  .icons__link {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    color: #FFFFFF;
+    margin-right: 1.5rem; }
 
 html {
   -webkit-box-sizing: border-box;

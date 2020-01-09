@@ -1,0 +1,72 @@
+.footer-container{
+    background-color: $headers;
+    color: $white;   
+}
+
+.footer{
+
+    max-width: 1184px;
+    padding: 112px 0 100px;
+    margin: 0 auto;
+
+    &__title{
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 2.75rem;
+        margin-bottom: 1rem;
+        margin-top: 0;
+        
+        &::before{
+            content: "";
+            width:80px;
+            height: 4px;
+            background-color:$link-blue;
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__info{
+
+        font-size: 1.25rem;
+        line-height: 2.125rem;
+        font-weight: 300;
+        width: 580px;
+    }
+
+    &__email{
+
+        color:$link-blue;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        font-weight: 500;
+        // margin-bottom: 1.5rem;
+        text-decoration: none;
+
+        &::after{
+            content:'';
+            width: 322px;
+            height: 2px;
+            background-color: $link-blue;
+            display: block;
+            margin-top: 0.5rem;
+        }
+    }
+
+
+}
+
+.icons{
+
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    
+    &__link{
+        display:inline-block;
+        width: 2rem;
+        height: 2rem;
+        color:$white;
+        margin-right: 1.5rem;
+    }
+
+}

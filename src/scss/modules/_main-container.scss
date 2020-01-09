@@ -1,8 +1,12 @@
 .main-container{
 
-    max-width: 1184px;
-    padding: 112px 0 100px;
+    max-width: 1200px;
+    padding: 112px 16px 100px;
     margin: 0 auto;
+
+    @media(max-width: $mobile){
+        padding: 64px 16px 30px;
+      }
 
     &__photo{
         width: 120px;

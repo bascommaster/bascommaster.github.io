@@ -1,13 +1,19 @@
 .header{
     max-width: 891px;
-    min-height: 292px;
-    margin-bottom: 2.5rem;
+    // min-height: 292px;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+    @media(max-width: $mobile){
+    }
 
     &__hello{
         font-size: 2.5rem;
         color: $headers;
         line-height: 3.5rem;
         font-weight: 600;
+        margin-top: 16px;
+        margin-bottom: 8px;
     }
 
     &__info{
@@ -17,6 +23,10 @@
         color: $text-grey;
         line-height: 2.25rem;
         margin-bottom: 3.75rem;
+
+        @media(max-width: $mobile){
+            margin-bottom: 40px;
+        }
     }
 
     &__link{
@@ -30,6 +40,10 @@
         text-decoration: none;
         padding-bottom: 10px;
         border-bottom: 3px solid $link-blue;
+
+        @media(max-width: $mobile){
+            margin-bottom: 120px;
+        }
     }
 
 

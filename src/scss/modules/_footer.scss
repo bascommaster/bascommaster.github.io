@@ -1,11 +1,15 @@
 .footer-container{
     background-color: $headers;
-    color: $white;   
+    color: $white; 
+    
+    @media(max-width: $mobile){
+        padding: 0 16px;       
+    }
 }
 
 .footer{
 
-    max-width: 1184px;
+    max-width: 1200px;
     padding: 112px 0 100px;
     margin: 0 auto;
 
@@ -15,14 +19,22 @@
         line-height: 2.75rem;
         margin-bottom: 1rem;
         margin-top: 0;
+
+        @media(max-width: $mobile){
+            margin-bottom: 8px;   
+        }
         
         &::before{
             content: "";
-            width:80px;
+            width:5rem;
             height: 4px;
             background-color:$link-blue;
             display: block;
             margin-bottom: 1.5rem;
+
+            @media(max-width: $mobile){
+                margin-bottom: 8px;
+            }
         }
     }
 
@@ -31,7 +43,11 @@
         font-size: 1.25rem;
         line-height: 2.125rem;
         font-weight: 300;
-        width: 580px;
+        max-width: 580px;
+
+        @media(max-width: $mobile){
+            margin-bottom: 24px;   
+        }
     }
 
     &__email{
@@ -45,7 +61,7 @@
 
         &::after{
             content:'';
-            width: 322px;
+            width: 20.125rem;
             height: 2px;
             background-color: $link-blue;
             display: block;
@@ -66,7 +82,7 @@
         width: 2rem;
         height: 2rem;
         color:$white;
-        margin-right: 1.5rem;
+        margin-right: 24px;
     }
 
 }

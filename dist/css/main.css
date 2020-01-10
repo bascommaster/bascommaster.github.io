@@ -478,17 +478,20 @@ template {
       grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); } }
 
 .project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
   background-color: #FFFFFF;
   font-size: 1.125rem;
   line-height: 2rem;
   border-radius: 8px;
   -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
           box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09); }
-  .project__list {
-    padding: 3rem 3rem 0;
-    margin: 0; }
 
 .project-items {
+  padding: 3rem 3rem 0;
+  margin: 0;
   list-style-type: none; }
   .project-items__logo {
     width: 3rem;

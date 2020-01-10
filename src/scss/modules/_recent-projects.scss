@@ -56,19 +56,18 @@
 }
 
 .project{
+    display: grid;
+    grid-template-rows: 1fr;
     background-color: $white;
     font-size: 1.125rem;
     line-height: 2rem;
     border-radius: 8px;
     box-shadow:  0px 6px 16px rgba(24, 41, 67, 0.09);
-
-    &__list{
-        padding: 3rem 3rem 0;
-        margin:0;
-    }
 }
 
 .project-items{
+    padding: 3rem 3rem 0;
+    margin:0;
 
     list-style-type: none;
 
@@ -96,10 +95,8 @@
 
     height: 4rem;
     background-color: $box-footer;
-    // background-color: #bbb;
     border-radius: 0 0 8px 8px;
     line-height: 4rem;
-    // padding-right: 3rem;
     text-align: right;
 
 
